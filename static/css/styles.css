@@ -1,0 +1,71 @@
+body {
+    background: #f0f0f0;
+    color: #707070;
+}
+
+.fund-name {
+    font-size:2.5rem;
+}
+
+.has-tip {
+    font-weight:normal;
+}
+
+label.big {
+    font-size: 1.0rem;
+    margin-bottom:.8rem;
+}
+
+label span.required {
+    color: #D42154;
+    font-size: 1.2rem;
+}
+
+.main {
+    background: #fff;
+    padding: 1.5em;
+}
+
+.amount-list input[type="radio"] {
+    margin: 0;
+}
+
+.amount-list label {
+    margin: 0;
+    width: 100%;
+}
+
+input[type="submit"], button {
+    width:100%;
+}
+
+.why {
+    padding: 1.5em;
+    background-color:#B2A1A1;
+    color:#fff;
+}
+
+.footer {
+    color: #465057;
+    margin-top:2rem;
+    background-color:#939DA3;
+    padding:2rem;
+    margin-top:0;
+}
+
+.footer span {
+    font-size:12px;
+}
+
+.footer h2 {
+    font-size:18px;
+    color: #465057;
+}
+
+.footer h2 a {
+    color: #465057;
+}
+
+.footer h2 a:hover {
+    color: #C1DDF0;
+}

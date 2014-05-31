@@ -1,0 +1,6 @@
+{
+  "name": "donate",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}

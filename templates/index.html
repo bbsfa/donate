@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block title %}Donate to Bardet Biedl Syndrome Fund{% endblock %}
+{% block body %}
+<br /><br />
+<div class="row">
+  <div class="medium-12 columns medium-centered text-center">
+    <span style="color:#465057;">Help us by donating to <span data-tooltip class="has-tip" title="The Bardet Biedl Syndrome Family Association is awaiting certification as a 501(c)3 non-profit. In the meantime, we have partnered with the Marshfield Area Community Foundation to receive tax deductible donations to support BBS research.">Marshfield Area Community Foundation's</span></span>
+    <h1 class="fund-name">Bardet Biedl Syndrome Fund</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="medium-6 columns medium-centered why">
+    <p class="text-justify">
+    Donations will support research into treatment and care for people affected by BBS as well as education and outreach to families, physicians and educators. Our first major project is the launch of a clinical registry for BBS, a vital foundation for accelerating the pace of BBS research. 
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="medium-6 columns medium-centered main">
+    <form action="/donate" method="post">
+
+      <label class="big" for="a25">How much would you like to donate?</label>
+      <ul class="small-block-grid-3 amount-list">
+        <li><label class="button secondary"><input checked id="a25" type="radio" name="amount" value="25.00"/> $25</label></li>
+        <li><label class="button secondary"><input type="radio" name="amount" value="50.00"/> $50</label></li>
+        <li><label class="button secondary"><input type="radio" name="amount" value="100.00"/> $100</label></li>
+        <li><label class="button secondary"><input type="radio" name="amount" value="500.00"/> $500</label></li>
+        <li><label class="button secondary"><input type="radio" name="amount" value="1000.00"/> $1,000</label></li>
+        <li><label class="button secondary"><input id="other" type="radio" name="amount" value="other"/> Other</label></li>
+      </ul>
+
+      <div id="other_amount_container" class="row hide">
+        <div class="medium-12 columns">
+          <label for="other_amount">Donation Amount <span class="required">*</span></label>
+          <div class="row collapse">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">$</span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input id="other_amount" name="other_amount" type="number" required disabled/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label for="in_honor_of">In Honor Of</label>
+      <input id="in_honor_of" name="in_honor_of" type="text" />
+
+      <div class="row">
+        <div class="medium-6 columns">
+          <label for="name">Your Name <span class="required">*</span></label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="medium-6 columns">
+          <label for="email">Your Email <span class="required">*</span></label>
+          <input id="email" name="email" type="email" required />
+        </div>
+      </div>
+      <p class="text-center"><i class="fa fa-info-circle"></i> You'll be redirected to PayPal to complete the donation.</p>
+      <button class="success">Donate Now</button>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="medium-6 columns medium-centered footer">
+    <div class="row">
+      <div class="medium-12 columns text-center">
+        <span>A project of the</span>
+        <div class="row">
+          <img alt="BBSFA Logo" src="/static/images/logo-small.png" />
+          <h2 style="display:inline;"><a href="http://www.bardetbiedl.org/">Bardet Biedl Syndrome Family Association</a></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
