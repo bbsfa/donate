@@ -47,8 +47,9 @@
 
       <label for="in_honor_of">In Honor Of</label>
       <input id="in_honor_of" name="in_honor_of" type="text" />
-
-      <div class="row">
+      
+      <label><input type="checkbox" value="1" name="anonymous" id="anonymous"> I'd like to donate anonymously.</label>
+      <div class="row hide-when-anonymous">
         <div class="medium-6 columns">
           <label for="name">Your Name <span class="required">*</span></label>
           <input id="name" name="name" type="text" required />
@@ -58,6 +59,7 @@
           <input id="email" name="email" type="email" required />
         </div>
       </div>
+
       <p class="text-center"><i class="fa fa-info-circle"></i> You'll be redirected to PayPal to complete the donation.</p>
       <button class="success">Donate Now</button>
     </form>

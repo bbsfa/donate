@@ -38,6 +38,17 @@
            other_amount_container.addClass('hide');
          }
          });
+        $('#anonymous').change(function() {
+
+          $('#name').prop('disabled', this.checked);
+          $('#email').prop('disabled', this.checked);
+
+          if (this.checked) {
+            $('.hide-when-anonymous').hide();
+          } else {
+            $('.hide-when-anonymous').show();
+          }
+        });
        });
      })(jQuery);
   </script>
